@@ -1458,7 +1458,7 @@ def analyze_sys( all_sys, start_frec_exponent = -2, stop_frec_exponent = 6, sys_
         fig_id = 'none'
     
     for ii in range(cant_sys):
-        fig_id, axes_hdl = GroupDelay(all_sys[ii], fig_id, label = sys_name[ii])
+        fig_id, axes_hdl = GroupDelay(all_sys[ii], start_frec_exponent, stop_frec_exponent, fig_id, label = sys_name[ii])
     
     # axes_hdl.legend(sys_name)
 
@@ -1656,7 +1656,7 @@ def pzmap(myFilter, annotations = False, filter_description='none', fig_id='none
     return fig_id, axes_hdl
     
 
-def GroupDelay(myFilter, fig_id='none', label = '', npoints = 1000):
+def GroupDelay(myFilter, start_frec_exponent, stop_frec_exponent, fig_id='none', label = '', npoints = 1000):
 
     
     if isinstance(myFilter, np.ndarray):
@@ -1669,12 +1669,12 @@ def GroupDelay(myFilter, fig_id='none', label = '', npoints = 1000):
             
             num, den = one_sos2tf(myFilter[ii,:])
             thisFilter = TransferFunction(num, den)
-            w, _, phase[:,ii] = thisFilter.bode(np.logspace(-2,2,npoints))
+            w, _, phase[:,ii] = thisFilter.bode(np.logspace(start_frec_exponent, stop_frec_exponent, npoints))
             sos_label += [label + ' - SOS {:d}'.format(ii)]
         
         # whole filter
         thisFilter = sos2tf_analog(myFilter)
-        w, _, phase[:,cant_sos] = thisFilter.bode(np.logspace(-2,2,npoints))
+        w, _, phase[:,cant_sos] = thisFilter.bode(np.logspace(start_frec_exponent, stop_frec_exponent, npoints))
         sos_label += [label]
         
         label = sos_label
@@ -1682,7 +1682,7 @@ def GroupDelay(myFilter, fig_id='none', label = '', npoints = 1000):
     else:
         # LTI object
         cant_sos = 0
-        w,_,phase = myFilter.bode( np.logspace(-2,2,npoints) )
+        w,_,phase = myFilter.bode( np.logspace(start_frec_exponent, stop_frec_exponent ,npoints) )
         
         if isinstance(label, str):
             label = [label]
