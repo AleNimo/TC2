@@ -34,7 +34,7 @@ SOS = sig.iirfilter(order_IIR, wcutofz, rp=None, rs=attenuation, btype='bandpass
 wz_target = np.linspace(0.00001,100,400)
 wz_IIR, H_IIR = sig.sosfreqz(SOS,wz_target,fs=fs)
 
-ganancia = 1.77827941
+ganancia = 10**(5/20) #5dB
 
 #%%Creación de filtro FIR
 cant_coeff_FIR = 1501
