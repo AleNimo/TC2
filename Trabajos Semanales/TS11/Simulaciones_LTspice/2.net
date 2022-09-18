@@ -1,0 +1,11 @@
+* D:\UTN\Nivel 4\Teoría de los circuitos 2\Repositorio\TC2\Trabajos Semanales\TS11\Simulaciones_LTspice\2.asc
+V1 N001 0 AC 1
+C1 N001 0 1
+R1 N001 0 0.5
+L1 N001 N002 0.25
+R2 N003 N002 62.5m
+C2 N003 0 4923.077m
+R3 N003 0 270.833m
+.ac dec 100k 0.001 100
+.backanno
+.end
