@@ -1,0 +1,24 @@
+Questionable use of curly braces in ".model uf4007 d (ikf=.15 n=2 is=100n rs=0.03 eg=1.11 xti=3 cjo=2.92655e-011 vj=0.851862 m=0.334552 fc=0.5 tt={tt=1.84973e-007} bv=1000 ibv=0.2 kf=0 af=1 iave=1000m vpk=800 mfg=gp1000v1a type=silicon)"
+    Error: undefined symbol in: "[tt]=1.84973e-007"
+Circuit: * D:\UTN\Nivel 4\Teoría de los circuitos 2\Repositorio\TC2\Trabajos Semanales\TS10\Simulaciones_LTspice\Draft1.asc
+
+WARNING: Specified period is not longer than the sum of Trise, Tfall, and Ton for v1.  Increasing period to 0.3
+Direct Newton iteration for .op point succeeded.
+
+Date: Mon Sep 19 11:31:39 2022
+Total elapsed time: 0.062 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2248
+traniter = 2221
+tranpoints = 1099
+accept = 1086
+rejected = 13
+matrix size = 3
+fillins = 0
+solver = Normal
+Matrix Compiler1:       5 opcodes  0.0/[0.0]/0.0
+Matrix Compiler2:      15 opcodes  0.0/[0.0]/0.0
+
