@@ -1,0 +1,3 @@
+../src/dspcode/TransformFunctions/arm_rfft_q31.c:169:6:arm_split_rfft_q31	72	static
+../src/dspcode/TransformFunctions/arm_rfft_q31.c:272:6:arm_split_rifft_q31	56	static
+../src/dspcode/TransformFunctions/arm_rfft_q31.c:106:6:arm_rfft_q31	32	static
