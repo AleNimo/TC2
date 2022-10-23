@@ -1,0 +1,11 @@
+* D:\UTN\Nivel 4\Teoría de los circuitos 2\Repositorio\TC2\Trabajos Semanales\TS13\Simulaciones Circuitales\Punto1.asc
+I1 0 N001 AC 1
+R1 N003 N002 2
+R2 N002 N001 10
+R3 0 N001 5
+C1 N003 N002 125m
+C2 N002 N001 100m
+RL N003 0 1
+.ac dec 10k 0.001 1k
+.backanno
+.end
