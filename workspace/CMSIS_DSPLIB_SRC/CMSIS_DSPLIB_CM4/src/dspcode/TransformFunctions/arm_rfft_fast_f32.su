@@ -1,3 +1,0 @@
-../src/dspcode/TransformFunctions/arm_rfft_fast_f32.c:43:6:stage_rfft_f32	0	static
-../src/dspcode/TransformFunctions/arm_rfft_fast_f32.c:129:6:merge_rfft_f32	4	static
-../src/dspcode/TransformFunctions/arm_rfft_fast_f32.c:328:6:arm_rfft_fast_f32	24	static
