@@ -1,0 +1,10 @@
+* D:\UTN\Nivel 4\Teoría de los circuitos 2\Repositorio\TC2\Trabajos Semanales\TS14\Simulaciones Circuitales\Punto1.asc
+L1 N001 N002 1
+C1 N002 0 2
+L2 N002 V2 1
+V1 N001 0 AC 1 Rser=1
+Ro V2 0 1
+.ac dec 100k 0.04 1
+.net I(Ro) V1
+.backanno
+.end
