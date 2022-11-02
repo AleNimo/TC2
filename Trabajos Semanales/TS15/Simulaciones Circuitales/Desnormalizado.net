@@ -1,0 +1,11 @@
+* D:\UTN\Nivel 4\Teoría de los circuitos 2\Repositorio\TC2\Trabajos Semanales\TS15\Simulaciones Circuitales\Desnormalizado.asc
+V1 Vi 0 AC 1 Rser=50
+L1 Vi N001 16.7037198071274µ
+L2 N001 V2 22.5293152339067µ
+C1 N001 0 3.38822031279421n
+C2 V2 0 2.51209955393568n
+RL V2 0 132.986129319094
+.ac dec 10k 0.001 10meg
+.net I(RL) V1
+.backanno
+.end
