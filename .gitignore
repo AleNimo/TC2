@@ -15,4 +15,6 @@
 # Netlist
 *.net
 
+*.plt
+
 # End of https://www.toptal.com/developers/gitignore/api/ltspice
